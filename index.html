@@ -1,10 +1,191 @@
 <!DOCTYPE html>
-<!-- remember lang="en" in html tag!!!! -->
+<!-- language: english -->
 <html lang="en">
   <head>
-    <title>Grant Lin Art Direction</title>
+    <!-- charset -->
+    <meta charset="utf-8">
+    <!-- accounting for mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site description -->
+    <meta name="description" content="Grant Lin is a multidisciplinary Art Director based in SF. With background in UIUX, Front End Development, Visual Design, Fine Art and Photography, Grant seek to work for creative ">
+    <!-- keywords, not so relevant for SEO nowadays but included it anyways -->
+    <meta name="keywords" content="art direction, art, direction, uiux, product design, photography, graphic design, visual design, branding, wed design, design, human centered design, human computer interaction">
+    <!-- normalize css for browser optimization -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- apply customized stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title> Grant Lin | San Francisco Based Art Director </title>
   </head>
   <body>
-    <h1>Grant Lin is a ___________.</h1>
+    <!-- header info -->
+    <header>
+      <div class="g-container">
+        <span class="break-line"></span>
+        <span class="signature">Proudly coded by Grant Hao-Wei Lin</span>
+      </div>
+      <!-- main menu -->
+      <div class="hamburger-menu">
+          <div class="bar"></div> 
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Work</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Resume</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section id="hero-section" class="g-container">
+      <!-- hero tagline -->
+      <h1>Hi, my name is Grant Hao-Wei Lin 
+        <br> Redefining <span id="profession">Art Direction</span>
+        <br> @ Berkeley, California
+      </h1>
+      <!-- interaction heart/hand content -->
+      <img id="handCursor" class="cursor" src="images/hand_cursor.svg">
+      <img id="handCursorHold" class="cursor" src="images/hand_cursor_hold.svg">
+      <img id="heart" class="heart" src="images/heart.svg">
+      <!-- hero images -->
+      <div id="hero-img-container">
+        <img class="hero-img" src="images/hero1.png">
+        <img class="hero-img" src="images/hero2.png">
+        <img class="hero-img" src="images/hero3.png">
+      </div>
+      <!-- hero bio -->
+      <p id="hero-bio">Having strong background and work experience in human center design, I believe the core of design, whether for a digital app or physical product, lies in determining the best sets of tools needed to accomplish a business goal. My best asset is my attention to details. Quality work requires time craftmanship and time, but creativity requires acting in the moment. The result of this intersecting paradox create the melody that I am most in love with. Welcome to my portfolio.</p>
+      <!-- candy basket // parallax scroll -->
+      <!-- SVG files -->
+      <svg id="wiggle-1" class="candy" xmlns="http://www.w3.org/2000/svg" width="235" height="235" viewBox="0 0 235 235">
+        <title>wiggle</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.6">
+          <g fill="#FBEFF1" id="wiggle-fill">
+            <path d="M55.6 198.7C55.5 198.3 55.3 197.9 55.1 197.4 54.4 195.8 53.7 193.9 53.1 191.8 50.8 184.3 49.8 176.9 50.6 170.8 51.2 166.4 52.7 163.2 55.2 160.6 58.8 157.1 62.6 156.3 75.9 157.1 76.5 157.2 77 157.2 78.1 157.3 90.9 158.1 96.9 158.1 105.1 156.7 117.7 154.7 128.7 149.3 138.1 140 147.3 130.7 152.6 119.8 154.5 107.6 155.7 99.5 155.5 93.8 154.5 81.4 154 75.4 153.8 72.8 153.8 70.1 153.9 64 155.1 60.8 158.8 57 161.9 53.9 165.3 52.1 169.3 51.1 175.8 49.5 184 50.4 192.1 53 194 53.6 195.6 54.2 197.1 54.9 197.5 55.1 197.9 55.2 198.2 55.4 210.4 61.7 225.5 56.8 231.8 44.6 238.1 32.3 233.3 17.2 221 10.9 220.1 10.4 218.6 9.7 216.8 8.9 214 7.7 210.9 6.5 207.4 5.4 191.3 0.2 174.4-1.6 157.5 2.5 144.8 5.6 133.2 11.9 123.5 21.7 109.8 35.4 104.1 51.1 103.8 69.4 103.8 74.4 104 78.1 104.6 85.6 105.8 99.4 105.4 101.9 102.7 104.6 99.6 107.7 96.2 108.3 81.2 107.4 80.1 107.3 79.5 107.2 78.9 107.2 67.5 106.5 60.2 106.6 51.8 108.3 39.8 110.6 29 116.1 19.9 125.2 9.1 136 3 149.4 1 164.1 -0.9 178.4 1 192.7 5.3 206.6 6.4 210.1 7.6 213.3 8.7 216.2 9.5 218 10.1 219.5 10.6 220.5 16.6 232.9 31.5 238.1 44 232.1 56.4 226.1 61.6 211.2 55.6 198.7Z"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="pill-1" class="candy" xmlns="http://www.w3.org/2000/svg" width="172" height="172" viewBox="0 0 172 172">
+        <title>pill</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.4">
+          <g fill="#D1E9E9" id="pill-fill"><path d="M7.3 42.7L128.6 163.9C138.3 173.7 154.1 173.7 163.9 163.9 173.7 154.1 173.7 138.3 163.9 128.6L42.7 7.3C32.9-2.4 17.1-2.4 7.3 7.3 -2.4 17.1-2.4 32.9 7.3 42.7Z"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="donut-1" class="candy" xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152">
+        <title>donut</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.6">
+          <g fill="#F3EDDE" id="donut-fill">
+            <path d="M76 152C34 152 0 118 0 76 0 34 34 0 76 0 118 0 152 34 152 76 152 118 118 152 76 152ZM76 102C90.4 102 102 90.4 102 76 102 61.6 90.4 50 76 50 61.6 50 50 61.6 50 76 50 90.4 61.6 102 76 102Z"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="wiggle-2" class="candy" xmlns="http://www.w3.org/2000/svg" width="235" height="235" viewBox="0 0 235 235">
+        <title>wiggle</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.6">
+          <g fill="#FBEFF1" id="wiggle-fill">
+            <path d="M55.6 198.7C55.5 198.3 55.3 197.9 55.1 197.4 54.4 195.8 53.7 193.9 53.1 191.8 50.8 184.3 49.8 176.9 50.6 170.8 51.2 166.4 52.7 163.2 55.2 160.6 58.8 157.1 62.6 156.3 75.9 157.1 76.5 157.2 77 157.2 78.1 157.3 90.9 158.1 96.9 158.1 105.1 156.7 117.7 154.7 128.7 149.3 138.1 140 147.3 130.7 152.6 119.8 154.5 107.6 155.7 99.5 155.5 93.8 154.5 81.4 154 75.4 153.8 72.8 153.8 70.1 153.9 64 155.1 60.8 158.8 57 161.9 53.9 165.3 52.1 169.3 51.1 175.8 49.5 184 50.4 192.1 53 194 53.6 195.6 54.2 197.1 54.9 197.5 55.1 197.9 55.2 198.2 55.4 210.4 61.7 225.5 56.8 231.8 44.6 238.1 32.3 233.3 17.2 221 10.9 220.1 10.4 218.6 9.7 216.8 8.9 214 7.7 210.9 6.5 207.4 5.4 191.3 0.2 174.4-1.6 157.5 2.5 144.8 5.6 133.2 11.9 123.5 21.7 109.8 35.4 104.1 51.1 103.8 69.4 103.8 74.4 104 78.1 104.6 85.6 105.8 99.4 105.4 101.9 102.7 104.6 99.6 107.7 96.2 108.3 81.2 107.4 80.1 107.3 79.5 107.2 78.9 107.2 67.5 106.5 60.2 106.6 51.8 108.3 39.8 110.6 29 116.1 19.9 125.2 9.1 136 3 149.4 1 164.1 -0.9 178.4 1 192.7 5.3 206.6 6.4 210.1 7.6 213.3 8.7 216.2 9.5 218 10.1 219.5 10.6 220.5 16.6 232.9 31.5 238.1 44 232.1 56.4 226.1 61.6 211.2 55.6 198.7Z"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="pill-2" class="candy" xmlns="http://www.w3.org/2000/svg" width="172" height="172" viewBox="0 0 172 172">
+        <title>pill</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.4">
+          <g fill="#D1E9E9" id="pill-fill"><path d="M7.3 42.7L128.6 163.9C138.3 173.7 154.1 173.7 163.9 163.9 173.7 154.1 173.7 138.3 163.9 128.6L42.7 7.3C32.9-2.4 17.1-2.4 7.3 7.3 -2.4 17.1-2.4 32.9 7.3 42.7Z"/>
+          </g>
+        </g>
+      </svg>
+      <svg id="donut-2" class="candy" xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152">
+        <title>donut</title>
+        <desc>Created with Sketch.</desc>
+        <g style="fill:none;opacity:0.6">
+          <g fill="#F3EDDE" id="donut-fill">
+            <path d="M76 152C34 152 0 118 0 76 0 34 34 0 76 0 118 0 152 34 152 76 152 118 118 152 76 152ZM76 102C90.4 102 102 90.4 102 76 102 61.6 90.4 50 76 50 61.6 50 50 61.6 50 76 50 90.4 61.6 102 76 102Z"/>
+          </g>
+        </g>
+      </svg>
+
+    </section>
+    <!-- end of hero section -->
+
+    <!-- projects section -->
+    <div id="projects-container">
+
+      <!-- side section navigation -->
+      <!-- is this the best tag to use semantically? should i use nav here again? -->
+      <h2 class="g-container">Work</h2>
+      <aside class="section-nav">
+        <ul>
+          <!-- <li><a href="">Top</a></li> -->
+          <li><a href="#project-1">The Artist Ritual</a></li>
+          <li><a href="#project-2">We Are Tiles</a></li>
+          <li><a href="#project-3">project 3</a></li>
+          <!-- <li><a href="">project 4</a></li>
+          <li><a href="">project 5</a></li>
+          <li><a href="">project 6</a></li> -->
+          <!-- <li><a href="">More</a></li> -->
+        </ul>
+      </aside>
+      <!-- 1st project -->
+      <section id="project-1" class="g-container">
+        <div class="project-blurb">
+          <h3>The Artist Ritual</h3>
+          <p>This project is a self portrait series that deals with the internal journey of an artist persona of the 21st century</p>
+          <a href="">Read More</a>
+        </div>
+      </section>
+      <!-- 2nd project -->
+      <section id="project-2" class="g-container">
+        <div class="project-blurb">
+          <h3>We Are Tiles</h3>
+          <p>Product Photography. Choose to fulldive immerse in VR, or access it with your moible phone on the go.</p>
+          <p>Fulldive allows you to explore and experience content wherever and however. the way you want it</p>
+          <a href="">Read More</a>
+        </div>
+      </section>
+      <!-- 3rd project -->
+      <section id="project-3" class="g-container">
+        <div class="project-blurb">
+          <h3>We Are Tiles</h3>
+          <p>Product Photography. Choose to fulldive immerse in VR, or access it with your moible phone on the go.</p>
+          <p>Fulldive allows you to explore and experience content wherever and however. the way you want it</p>
+          <a href="">Read More</a>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer class="g-container" class="g-container">
+      <!-- footer cta -->
+      <div id="footer-cta">
+        Thank you for visiting!
+        <br>
+        <span ><a href="">Contact me</a></span> for inquiries
+        <br>View my 
+        <span><a href="">Resume</a></span>.
+      </div>
+      <!-- footer nav -->
+      <ul>
+        <li><a href="">Work</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+        <!-- <li><a href="">Resume</a></li>
+        <li><a href="">Contact</a></li> -->
+      </ul>
+      <!-- social media links -->
+      <ul class="social-links">
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Dribbble</a></li>
+        <li><a href="">GitHub</a></li>
+      </ul>
+    </footer>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
