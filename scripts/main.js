@@ -67,10 +67,7 @@ $(document).ready(function(){
   /*==========================================================================
      Section Navigation -- Dot Nav
   ==========================================================================*/
-  //breakpoint for showing section nav
-  var activate = $('#projects-container section').first().offset().top - 100;
-  //breakpoint for showing section nav
-  var end = $('#projects-container section').last().offset().top + 100;
+
   //get the array of section nav anchor
   var sectionNavAnchors = $('.section-nav').find('a');
   //transform sectionNavAnchors array to sectionNavIds Array
@@ -86,7 +83,14 @@ $(document).ready(function(){
     $this.addClass('is-active');
     // $siblings.removeClass('is-active');
   })
+
+  //fade in or fade out section nav
   $(window).scroll(function(e) {
+    //the following variable are nested to ensure correct scroll position for hiding
+    //breakpoint for showing section nav
+    var activate = $('#projects-container section').first().offset().top - $('#projects-container section').first().height()/3;
+    //breakpoint for showing section nav
+    var end = $('#projects-container section').last().offset().top + $('#projects-container section').last().height()/2;
     var _scrolled = $(window).scrollTop();
     if (_scrolled >= activate && _scrolled <= end) {
       $('.section-nav').fadeIn();
