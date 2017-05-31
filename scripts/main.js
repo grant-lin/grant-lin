@@ -75,6 +75,8 @@ $(document).ready(function(){
     var item = $($(this).attr("href"));
     if (item.length) { return item; }
   });
+  var sectionBlurbs = $('#projects-container').find('.project-blurb');
+  console.log('sectionBlurbs is ' + sectionBlurbs);
   $('.section-nav li').click(function(){
     //using $ here to denote a variable that is jQuery-wrapped
     $this = $(this),
@@ -84,13 +86,15 @@ $(document).ready(function(){
     // $siblings.removeClass('is-active');
   })
 
+    var activate = $('#projects-container section').first().offset().top - $('#projects-container section').first().height()/3;
+    //breakpoint for showing section nav
+    var end = $('#projects-container section').last().offset().top + $('#projects-container section').last().height()/2;
+    //current scrolled to section id
+    var currId;
   //fade in or fade out section nav
   $(window).scroll(function(e) {
     //the following variable are nested to ensure correct scroll position for hiding
     //breakpoint for showing section nav
-    var activate = $('#projects-container section').first().offset().top - $('#projects-container section').first().height()/3;
-    //breakpoint for showing section nav
-    var end = $('#projects-container section').last().offset().top + $('#projects-container section').last().height()/2;
     var _scrolled = $(window).scrollTop();
     if (_scrolled >= activate && _scrolled <= end) {
       $('.section-nav').fadeIn();
@@ -109,12 +113,19 @@ $(document).ready(function(){
     });
     // Get the id of the current element
      cur = cur[cur.length-1];
-     var id = cur && cur.length ? cur[0].id : "";
+     currId = cur && cur.length ? cur[0].id : "";
+     console.log ('current id is ' + currId);
+
      // Set/remove active class
      sectionNavAnchors
+     //remove the is-active class of all the parents of the anchors (aka li's)
      .parent().removeClass('is-active')
-     .end().filter("[href='#"+id+"']").parent().addClass('is-active');
+     //filter the current li and add the is-active class
+     .end().filter("[href='#"+currId+"']").parent().addClass('is-active');
 
+     sectionBlurbs.removeClass('is-active');
+     //exact syntax is important in the following line
+     sectionBlurbs.parent().filter("div [id='" + currId + "']").children().addClass('is-active');
   });
 
   //need to fix
@@ -176,15 +187,15 @@ $(document).ready(function(){
   var defaultDonut2Top = parseFloat($('#donut-2').css('top'));
   var defaultPill1Top = parseFloat($('#pill-1').css('top'));
   var defaultPill2Top = parseFloat($('#pill-2').css('top'));
-
+  
 
   $(window).scroll(function(e) {
-    var _scrolled = $(window).scrollTop();
-    
+    var scrolled = $(window).scrollTop();
     var moveCandy = function(idString, defaultTop, speed) {
-    $(idString).css('top', defaultTop + _scrolled*speed + "px");
+    $(idString).css('top', defaultTop + scrolled*speed + "px");
     };
     //for each wiggle svg, change the css to this calculation
+    console.log('moving candies');
     moveCandy('#wiggle-1', defaultWiggle1Top, 0.5);
     moveCandy('#wiggle-2', defaultWiggle2Top, 0.5);
     moveCandy('#donut-1', defaultDonut1Top, 0.3);
@@ -194,6 +205,33 @@ $(document).ready(function(){
 
   });
 
+/*==========================================================================
+     Project Blurb Parallax Scroll
+  ==========================================================================*/
+  // var firstProjectOffsetTop = $('#projects-container section').first().offset().top;
+  // console.log ('first project is' + firstProjectOffsetTop);
+  // var blurbBottom = Math.floor($('.project-blurb').css('bottom').replace(/[^-\d\.]/g, ''));
+  // $(window).scroll(function(e) {
+  //   //if the scrolled position is greater than the first project position
+  //   var scrolled = $(window).scrollTop();
+  //   console.log('scrolling');
+  //   console.log ('scrolled is ' + scrolled);
+  //   if (scrolled > firstProjectOffsetTop) {
+  //     console.log('SCROLL PASSSED');
+  //     console.log('blurbBottom is ' + blurbBottom);
+  //     var moveBlurb = function(idString, defaultBottom, speed) {
+  //       //this need to be fixes
+  //       console.log('scrolled*speed is ' + scrolled*speed);
+  //       var newBottom = defaultBottom + scrolled*speed;
+  //     $(idString).css('bottom', newBottom + "px");
+  //     console.log('new bottom is ' + newBottom + "px");
+  //     };
+  //     //for each wiggle svg, change the css to this calculation
+  //     var blurbToMoveId = '#' + id + ' .project-blurb';
+  //     console.log('moving ' + id);
+  //     moveBlurb( blurbToMoveId, blurbBottom, 0.1);
+  //   }
+  // });
 
 });
 
