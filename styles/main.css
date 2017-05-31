@@ -25,7 +25,8 @@ html {
 }
 
 body {
-  font-family: Montserrat-Light;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   line-height: 24px;
   color: #000000;
   margin: 0 auto;
@@ -54,8 +55,9 @@ a:active {
 
 h1 {
   position: relative;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+  font-weight: 700;
   letter-spacing: 0.75px;
   line-height: 40px;
   z-index: 2;
@@ -67,7 +69,8 @@ h2 {
 
 .signature {
   opacity: 0.3;
-  font-family: Montserrat-Light;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 10px;
   line-height: 24px;
 }
@@ -95,7 +98,8 @@ header {
 header nav {
   position: relative;
   width: 100%;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   font-size: 80px;
   letter-spacing: 1.25px;
   line-height: 96px;
@@ -255,40 +259,55 @@ header nav li{
   z-index: -1;
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
 #wiggle-1 {
   top: -11%;
   left: 58.5%;
   width: 17%;
+  animation: float 4s infinite ease-in-out;
 }
 
 #pill-1 {
   top: -11%;
   left: 8%;
   width: 13%;
+  animation: float 3s infinite ease-in-out;
 }
 
 #donut-1 {
   top: 62%;
   left: -6%;
   width: 12%;
+  animation: float 6s infinite ease-in-out;
 }
 
 #wiggle-2 {
   top: 79%;
   left: 29%;
   width: 17%;
+  animation: float 4s infinite ease-in-out;
 }
 
 #pill-2 {
   top: 50%;
   right: 2%;
   width: 13%;
+  animation: float 3s infinite ease-in-out;
 }
 
 #donut-2 {
   top: 88%;
   right: 14%;
   width: 12%;
+  animation: float 6s infinite ease-in-out;
 }
 
 /*==========================================================================
@@ -374,6 +393,7 @@ header nav li{
 ==========================================================================*/
 #projects-container section {
   position: relative;
+  height: 700px;
   height: 105vh;
   /*need to implement shorthand*/
   background-color: #aeaeae;
@@ -415,7 +435,8 @@ footer {
 
 footer ul {
   display: inline-block;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   list-style-type: none;
   padding: 20px;
   margin: 0 auto;
@@ -429,7 +450,8 @@ footer ul {
   position: absolute;
   top: 30px;
   right: 30px;
-  font-family: Montserrat-Bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 50px;
   z-index: 1;
   letter-spacing: 1.25px;
@@ -455,8 +477,66 @@ footer ul {
 
 @media screen and (max-width: 960px) {
 
+  /*hamburger menu style*/
+  :root {
+  --bar-width: 80px;
+  --bar-height: 12px;
+  --bar-spacing: 24px;
+  }
+
+  /*footer font style*/
+  #footer-cta {
+    top: 30px;
+    right: 30px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
 }
 
-@media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 720px) {
+
+  /*hamburger menu style*/
+  :root {
+    --bar-width: 50px;
+    --bar-height: 8px;
+    --bar-spacing: 16px;
+  }
+
+  /* set hamburger menu container*/
+  .hamburger-menu {
+    position: relative;
+    top: 9%;
+    left: 80%;
+  }
+
+  /*2 columns for hero bio*/
+  #hero-bio {
+    width: 100%;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }  
+
+  /*footer font style*/
+
+  footer ul {
+    line-height: 80px;
+  }
+
+  #footer-cta {
+    position: relative;
+    width: 100%;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .social-links {
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    left: 30px;
+    padding: 0;
+  }
 }
