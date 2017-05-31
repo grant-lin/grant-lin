@@ -21,13 +21,13 @@ html {
 ========================================================================== */
 
 html {
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.7em;
   color: #000000;
   margin: 0 auto;
   max-width: 1440px;
@@ -56,22 +56,22 @@ a:active {
 h1 {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 2.1em;
   font-weight: 700;
-  letter-spacing: 0.75px;
-  line-height: 40px;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
   z-index: 2;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3em;
 }
 
 .signature {
   opacity: 0.3;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 0.65em;
   line-height: 24px;
 }
 
@@ -100,7 +100,7 @@ header nav {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 5.5em;
   letter-spacing: 1.25px;
   line-height: 96px;
   z-index: 1;
@@ -450,9 +450,9 @@ footer ul {
   padding: 20px;
   margin: 0 auto;
   margin-top: 50px;
-  font-size: 56px;
+  font-size: 5.5em;
   letter-spacing: 1.25px;
-  line-height: 96px;
+  line-height: 1.2em;
 }
 
 #footer-cta {
@@ -461,10 +461,10 @@ footer ul {
   right: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3em;
   z-index: 1;
-  letter-spacing: 1.25px;
-  line-height: 66px;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
 }
 
 .social-links {
@@ -476,7 +476,7 @@ footer ul {
 
 .social-links li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 0.3em;
 
 }
 
@@ -486,6 +486,9 @@ footer ul {
 
 @media screen and (max-width: 960px) {
 
+  html {
+    font-size: 0.7em;
+  }
   /*hamburger menu style*/
   :root {
   --bar-width: 80px;
@@ -493,18 +496,19 @@ footer ul {
   --bar-spacing: 24px;
   }
 
-  /*footer font style*/
+  /*footer style*/
   #footer-cta {
     top: 30px;
     right: 30px;
-    font-size: 32px;
-    line-height: 48px;
   }
 
 }
 
 @media screen and (max-width: 720px) {
 
+  html {
+    font-size: 0.7em;
+  }
   /*hamburger menu style*/
   :root {
     --bar-width: 50px;
@@ -538,8 +542,6 @@ footer ul {
     width: 100%;
     top: 30px;
     left: 30px;
-    font-size: 20px;
-    line-height: 32px;
   }
   .social-links {
     margin-top: 0;
