@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-
+  //check if current screen is mobile
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
   /*==========================================================================
      Hamburger Menu
   ==========================================================================*/
@@ -20,52 +21,71 @@ $(document).ready(function(){
 
   //when cursor moves on the container, have the svg follow the cursor
   $('#hero-img-container').mousemove(function(e) {
-    var _cursorParentOffset = $('#hero-img-container').offset(); 
-    $('#handCursor').css(
-      'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
-    );
-    $('#handCursorHold').css(
-      'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
-    );
+    //if it's not mobile browser
+    if(!isMobile) {
+      var _cursorParentOffset = $('#hero-img-container').offset(); 
+      $('#handCursor').css(
+        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
+      );
+      $('#handCursorHold').css(
+        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
+      );
+    }
+
   });
 
   //when cursor is over the container, show the svg. 
   $('#hero-img-container').mouseover(function() {
-    $('#handCursor').show();
+    //if it's not mobile browser
+    if(!isMobile) {
+      $('#handCursor').show();
+    }
   });
 
   //when cursor leaves the container, hide svg.
   $('#hero-img-container').mouseout(function() {
-    $('#handCursor').hide();
+    //if it's not mobile browser
+    if(!isMobile) {
+      $('#handCursor').hide();
+    }
   });
 
   //on mouse down, switch svg and clone heart.
   $('#hero-img-container').mousedown(function(e) {
-    $('#handCursor').hide();
-    $('#handCursorHold').show();
-    var makeHeart = $('#heart').clone().removeAttr('id').show();
-    //get where the current hero img container is relative to the screen
-    var _cursorParentOffset = $('#hero-img-container').offset(); 
-    makeHeart.appendTo('#hero-img-container').show().css({
-      //add the amount of scroll from the top of the document if user isn't clicking at the top scroll position
-      'top': [e.clientY - _cursorParentOffset.top + $(document).scrollTop()] + 'px',
-      'left': [e.clientX - _cursorParentOffset.left - 10] + 'px'
-    });
+    //if it's not mobile browser
+    if(!isMobile) {
+      $('#handCursor').hide();
+      $('#handCursorHold').show();
+      var makeHeart = $('#heart').clone().removeAttr('id').show();
+      //get where the current hero img container is relative to the screen
+      var _cursorParentOffset = $('#hero-img-container').offset(); 
+      makeHeart.appendTo('#hero-img-container').show().css({
+        //add the amount of scroll from the top of the document if user isn't clicking at the top scroll position
+        'top': [e.clientY - _cursorParentOffset.top + $(document).scrollTop()] + 'px',
+        'left': [e.clientX - _cursorParentOffset.left - 10] + 'px'
+      });
+    }
   });
 
   //on mouse up, switch svg.
   $('#hero-img-container').mouseup(function() {
-    $('#handCursorHold').hide();
-    $('#handCursor').show();
+    //if it's not mobile browser
+    if(!isMobile) {
+      $('#handCursorHold').hide();
+      $('#handCursor').show();
+    }
   });
 
   //if user resizes the window, get rid of the hearts except for the first one (template)
   $(window).resize(function() {
-    $('.heart').not(':first').remove();
+    //if it's not mobile browser
+    if(!isMobile) {
+      $('.heart').not(':first').remove(); 
+    }
   }); 
 
   /*==========================================================================
-     Section Navigation -- Dot Nav
+     Section Navigation -- Dot Nav + Project Blurb
   ==========================================================================*/
 
   //get the array of section nav anchor
@@ -91,41 +111,45 @@ $(document).ready(function(){
     var end = $('#projects-container section').last().offset().top + $('#projects-container section').last().height()/2;
     //current scrolled to section id
     var currId;
+
   //fade in or fade out section nav
   $(window).scroll(function(e) {
-    //the following variable are nested to ensure correct scroll position for hiding
-    //breakpoint for showing section nav
-    var _scrolled = $(window).scrollTop();
-    if (_scrolled >= activate && _scrolled <= end) {
-      $('.section-nav').fadeIn();
-    } else if (_scrolled > end) {
-      console.log('need to fadeOut');
-      $('.section-nav').fadeOut();
-    } else if (_scrolled < activate) {
-      $('.section-nav').hide();
-    }
+    //if it's not mobile browser
+    if(!isMobile) {
+      //the following variable are nested to ensure correct scroll position for hiding
+      //breakpoint for showing section nav
+      var _scrolled = $(window).scrollTop();
+      if (_scrolled >= activate && _scrolled <= end) {
+        $('.section-nav').fadeIn();
+      } else if (_scrolled > end) {
+        console.log('need to fadeOut');
+        $('.section-nav').fadeOut();
+      } else if (_scrolled < activate) {
+        $('.section-nav').hide();
+      }
 
-    // highlight current tab
-    // Get id of current scroll item
-    var cur = sectionNavIds.map(function(){
-     if ($(this).offset().top < _scrolled + 200)
-       return this;
-    });
-    // Get the id of the current element
-     cur = cur[cur.length-1];
-     currId = cur && cur.length ? cur[0].id : "";
-     console.log ('current id is ' + currId);
+      // highlight current tab
+      // Get id of current scroll item
+      var cur = sectionNavIds.map(function(){
+       if ($(this).offset().top < _scrolled + 200)
+         return this;
+      });
+      // Get the id of the current element
+       cur = cur[cur.length-1];
+       currId = cur && cur.length ? cur[0].id : "";
+       console.log ('current id is ' + currId);
 
-     // Set/remove active class
-     sectionNavAnchors
-     //remove the is-active class of all the parents of the anchors (aka li's)
-     .parent().removeClass('is-active')
-     //filter the current li and add the is-active class
-     .end().filter("[href='#"+currId+"']").parent().addClass('is-active');
+       // Set/remove active class
+       sectionNavAnchors
+       //remove the is-active class of all the parents of the anchors (aka li's)
+       .parent().removeClass('is-active')
+       //filter the current li and add the is-active class
+       .end().filter("[href='#"+currId+"']").parent().addClass('is-active');
 
-     sectionBlurbs.removeClass('is-active');
-     //exact syntax is important in the following line
-     sectionBlurbs.parent().filter("div [id='" + currId + "']").children().addClass('is-active');
+       sectionBlurbs.removeClass('is-active');
+       //exact syntax is important in the following line
+       sectionBlurbs.parent().filter("div [id='" + currId + "']").children().addClass('is-active');
+     } 
   });
 
   //need to fix
