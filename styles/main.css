@@ -603,7 +603,7 @@ footer ul {
   .social-links {
     display: block;
     position: relative;
-    margin-top: 25px;
+    margin: 25px 0;
     padding-top: 0;
     right: initial;
     bottom: 0;
