@@ -541,7 +541,7 @@ footer ul {
   }
   .project-blurb {
     position: relative;
-    opacity: 0;
+    opacity: 1;
     z-index: 1;
     width: 100%;
     padding: 30px;
@@ -553,13 +553,8 @@ footer ul {
     transition: all 1000ms 400ms;
   }
 
-  .project-blurb.is-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 1000ms 400ms;
-  }
-  /*footer font style*/
 
+  /*footer font style*/
   footer ul {
     line-height: 80px;
   }
