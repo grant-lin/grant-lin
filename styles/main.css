@@ -27,7 +27,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  line-height: 1.7em;
+  line-height: 2em;
   color: #000000;
   margin: 0 auto;
   max-width: 1440px;
@@ -40,6 +40,7 @@ body {
 a {
   color: #21A8A5;
   text-decoration: none;
+  transition: all 300ms;
 }
 
 a:hover {
@@ -49,6 +50,7 @@ a:hover {
 a:active {
   color: #3FE9E8;
 }
+
 /*==========================================================================
    Text Styles
 ==========================================================================*/
@@ -111,10 +113,11 @@ footer ul {
   line-height: 1.5em;
 }
 
-.social-links li {
-  font-size: 0.3em;
-
+/*font awesome sizes*/
+.social-links i.fa {
+  font-size: 1em;
 }
+
 /*==========================================================================
    Main Navigation Styles
 ==========================================================================*/
@@ -438,7 +441,7 @@ header nav li{
 
 .project-blurb.is-active {
   opacity: 1;
-  transform: translateY(-36px);
+  transform: translateY(-7em);
   transition: all 1000ms 300ms;
 }
 
@@ -466,7 +469,8 @@ footer ul {
   display: inline-block;
   list-style-type: none;
   padding: 0px;
-  margin: 50px auto;
+  margin: 25px auto;
+  margin-top: 150px; 
 }
 
 #footer-cta {
@@ -514,7 +518,7 @@ footer ul {
 @media screen and (max-width: 720px) {
   /* global style */
   html {
-    font-size: 0.75em;
+    font-size: 0.8em;
   }
 
   /* hamburger menu style */
@@ -561,7 +565,7 @@ footer ul {
     opacity: 1;
     z-index: 1;
     width: 100%;
-    height: 15em;
+    height: 16em;
     padding: 15px 30px;
     margin: 0 auto;
     top: -60px;
@@ -583,10 +587,11 @@ footer ul {
     text-overflow: ellipsis;
   }
 
-  /* footer font style */
+  /* footer style */
   footer ul {
     line-height: 80px;
     margin-bottom: 0px;
+    margin-top: 60px;
   }
 
   #footer-cta {
@@ -596,8 +601,9 @@ footer ul {
     left: 0;
   }
   .social-links {
+    display: block;
     position: relative;
-    margin-top: 0;
+    margin-top: 25px;
     padding-top: 0;
     right: initial;
     bottom: 0;
