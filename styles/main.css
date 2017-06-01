@@ -533,6 +533,14 @@ footer ul {
   }  
 
   /*project section style*/
+  /*hide opaque dot forever*/
+  .section-nav li {
+    display: none;
+  }
+  .section-nav li.is-active {
+    opacity: 0;
+  }
+
   #projects-container section {
     background-attachment: initial;
     background-position: center;
@@ -549,10 +557,10 @@ footer ul {
     top: 30px;
     bottom: initial;
     right: initial;
-    background-color: rgba(255, 255, 255, 0.9);
-    transition: all 1000ms 400ms;
   }
-
+  .project-blurb.is-active {
+    transform: none;
+  }
 
   /*footer font style*/
   footer ul {
@@ -566,10 +574,10 @@ footer ul {
     left: 0;
   }
   .social-links {
+    position: relative;
     margin-top: 0;
     padding-top: 0;
-    position: relative;
-    left: 30px;
-    padding: 0;
+    right: initial;
+    bottom: 0;
   }
 }
