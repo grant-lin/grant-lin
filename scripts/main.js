@@ -125,7 +125,7 @@ $(document).ready(function(){
         console.log('need to fadeOut');
         $('.section-nav').fadeOut();
       } else if (_scrolled < activate) {
-        $('.section-nav').hide();
+        $('.section-nav').fadeOut();
       }
 
       // highlight current tab

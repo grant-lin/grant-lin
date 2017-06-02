@@ -34,7 +34,7 @@ body {
 }
 
 .g-container {
-  padding: 0px 20px;
+  padding: 0 2rem;
 }
 
 a {
@@ -56,16 +56,14 @@ a:active {
 ==========================================================================*/
 
 header nav {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 5.5em;
   letter-spacing: 1.25px;
-  line-height: 96px;
+  line-height: 1.2em;
 }
 
 h1 {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.1em;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -75,11 +73,11 @@ h1 {
 
 h2 {
   font-size: 3em;
+  line-height: 1.4em;
 }
 
 .signature {
   opacity: 0.3;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 0.65em;
   line-height: 24px;
@@ -97,8 +95,34 @@ h2 {
   color:rgba(33, 168, 165, 1);
 }
 
+/*individual project section*/
+.project-nav a {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.title-h1-container h1 {
+  font-size: 3.5em;
+}
+
+.project-hero-section h2 {
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  line-height: 40px;
+}
+
+/*font style for anchor inside related projects div*/
+.related-projects-parent a {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*footer*/
+
 footer ul {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 5.5em;
   letter-spacing: 1.25px;
@@ -106,7 +130,6 @@ footer ul {
 }
 
 #footer-cta {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 3em;
   letter-spacing: 0.03em;
@@ -133,14 +156,10 @@ header nav ul {
   display: none;
   background-color: #fff;
   width: 100%;
-  list-style-type: none;
   padding: 20px;
   margin: 0 auto;
   border-bottom: 1px solid #e7e7e7;
-}
-
-header nav li{
-  
+  list-style-type: none;
 }
 
 /* hamburger menu */
@@ -154,8 +173,8 @@ header nav li{
 /* set hamburger menu container*/
 .hamburger-menu {
   position: absolute;
-  top: 9%;
-  right: 9%;
+  top: 3.5em;
+  right: 2em;
   /* the following expression doesn't work*/
   width: var(--bar-width);
   height: calc( var(--bar-height) + var(--bar-spacing)*2 );
@@ -422,7 +441,7 @@ header nav li{
   /*need to implement shorthand*/
   background-color: #aeaeae;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right center;
   background-size: cover;
 }
 
@@ -445,16 +464,141 @@ header nav li{
   transition: all 1000ms 300ms;
 }
 
-#project-1 {
+.project-1 {
   background-image: url("../images/project-1-splash.jpg");
 }
 
-#project-2 {
+.project-2 {
   background-image: url("../images/project-2-splash.jpg");
 }
 
-#project-3 {
-  background-image: url("../images/project-1-splash.jpg");
+.project-3 {
+  background-image: url("../images/project-3-splash.jpg");
+}
+
+.project-4 {
+  background-image: url("../images/project-4-splash.jpg");
+}
+
+/*==========================================================================
+   Individual Project Page Styles
+==========================================================================*/
+.title-h1-container {
+  width: 100%;
+}
+.project-hero-section {
+  position: relative;
+  height: 700px;
+  height: 100vh;
+  background-color: #aeaeae;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-hero-section h1 {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 0px 0px;
+}
+
+.project-hero-section h2 {
+  position: absolute;
+  bottom: 0.5em;
+  width: 50%;
+}
+
+/*project nav*/
+aside.project-nav {
+  float: left;
+  margin-top: 38px;
+  width: 20%;
+}
+
+aside.project-nav.is-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 2.5em;
+  width: 20%;
+  z-index: 3;
+}
+
+aside.project-nav.is-fixed-end {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  z-index: 3;
+}
+
+aside.project-nav li {
+  display: block;
+}
+
+/*project body*/
+.project-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-body section {
+  float: right;
+  width: 80%;
+}
+
+/*related projects*/
+aside.related-projects {
+  overflow: auto;
+}
+
+div.related-projects-parent {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 33.333%;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+div.related-projects-parent:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+}
+
+.related-projects-parent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+.related-projects-parent:hover div{
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.related-projects-parent a {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  /*not sure if setting padding this way is the best way to make sure anchor is clickable*/
+  padding: 100% 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.related-projects-parent:hover a {
+  opacity: 1;
 }
 
 /*==========================================================================
@@ -502,11 +646,14 @@ footer ul {
   }
   /*hamburger menu style*/
   :root {
-  --bar-width: 80px;
-  --bar-height: 12px;
-  --bar-spacing: 24px;
+    --bar-width: 80px;
+    --bar-height: 12px;
+    --bar-spacing: 24px;
   }
-
+  /*projects section style*/
+  #projects-container section {
+    background-position: center;
+  }
   /*footer style*/
   #footer-cta {
     top: 30px;
