@@ -768,7 +768,7 @@ footer ul {
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    margin-top: 120px;
+    margin-top: 12.5em;
   }
 
   .project-blurb {
@@ -776,10 +776,10 @@ footer ul {
     opacity: 1;
     z-index: 1;
     width: 100%;
-    height: 16em;
-    padding: 15px 30px;
+    height: 19em;
+    padding: 1.5em 2.5em;
     margin: 0 auto;
-    top: -60px;
+    top: -9em;
     bottom: initial;
     right: initial;
     background-color: rgba(255, 255, 255, 1);
