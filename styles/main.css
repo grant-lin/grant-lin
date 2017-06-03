@@ -809,6 +809,11 @@ footer ul {
     width: 100%;
   }
 
+  .image-grid img {
+    width: 100%;
+  }
+
+
   div.related-projects-parent {
     width: 50%;
   }
