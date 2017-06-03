@@ -43,6 +43,11 @@ a {
   transition: all 300ms;
 }
 
+a.anchor-disabled {
+  pointer-events: none;
+  color: #E1E1E1;
+}
+
 a:hover {
   color: #3ED5D4;
 }
@@ -95,10 +100,19 @@ h2 {
   color:rgba(33, 168, 165, 1);
 }
 
+.project-blurb a { 
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
 /*individual project section*/
 .project-nav a {
   font-size: 1.5em;
   font-weight: 700;
+}
+
+.project-nav a:hover {
+  color: rgba(33, 168, 165, 1);
 }
 
 .title-h1-container h1 {
@@ -110,6 +124,11 @@ h2 {
   color: #FFFFFF;
   letter-spacing: 0.02em;
   line-height: 40px;
+}
+
+.related-projects h3 {
+  font-size: 3em;
+  line-height: 1.4em;
 }
 
 /*font style for anchor inside related projects div*/
@@ -450,7 +469,8 @@ header nav ul {
   opacity: 0;
   z-index: 1;
   width: 400px;
-  padding: 20px 40px;
+  padding: 1.5em 3em;
+  padding-bottom: 2.5em;
   right: 5%;
   bottom: -5%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -463,6 +483,30 @@ header nav ul {
   transform: translateY(-7em);
   transition: all 1000ms 300ms;
 }
+
+.project-blurb p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2.3em;
+}
+
+.project-blurb a {
+  display: inline-block;
+  background-color: rgba(33, 168, 165, 1);
+  width: 100%;
+  padding: 10px;
+  border-radius: 2em;
+  transition: all 0.5s;
+}
+
+.project-blurb a:hover {
+  background-color: #3ED5D4;
+}
+
+
 
 .project-1 {
   background-image: url("../images/project-1-splash.jpg");
@@ -488,8 +532,8 @@ header nav ul {
 }
 .project-hero-section {
   position: relative;
-  height: 700px;
-  height: 100vh;
+  height: 550px;
+  height: 77vh;
   background-color: #aeaeae;
   background-position: center;
   background-size: cover;
@@ -533,6 +577,18 @@ aside.project-nav.is-fixed-end {
 
 aside.project-nav li {
   display: block;
+  opacity: 0.5;
+  transition: transform 0.2s;
+  transform-origin: 0 50%;
+}
+
+aside.project-nav li:hover {
+  transform: scale(1.1);
+  transform-origin: 0 50%;
+}
+
+aside.project-nav li.is-active {
+  opacity: 1;
 }
 
 /*project body*/
@@ -544,6 +600,14 @@ aside.project-nav li {
 .project-body section {
   float: right;
   width: 80%;
+}
+
+.image-grid {
+  margin: 4em 0;
+}
+.image-grid img {
+  float: left;
+  width: 33.33%;
 }
 
 /*related projects*/
@@ -726,12 +790,28 @@ footer ul {
     transform: none;
   }
 
-  .project-blurb p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  /* individual project page style*/
+  .project-nav ul {
+    display: none;
+  }
+
+  .project-hero-section {
+    background-position: bottom center;
+  }
+
+  .project-hero-section h2 {
+    position: relative;
+    top: 100%;
+    transform: translateY(-120%);
+    width: 100%;
+  }
+
+  .project-body section {
+    width: 100%;
+  }
+
+  div.related-projects-parent {
+    width: 50%;
   }
 
   /* footer style */
