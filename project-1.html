@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- carousel default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- apply customized stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
     <title> Grant Lin | San Francisco Based Art Director </title>
@@ -92,12 +96,38 @@
                 My best asset is my attention to details. Quality work requires time craftmanship and time, but creativity requires acting in the moment. The result of this intersecting paradox create the melody that I am most in love with. Welcome to my portfolio. 
             </p>
             <h2 id="sec-3">
-                Read More
+                Gallery
             </h2>
             <p>
-                Having strong background and work experience in human center design, I believe the core of design, whether for a digital app or physical product, lies in determining the best sets of tools needed to accomplish a business goal.
                 My best asset is my attention to details. Quality work requires time craftmanship and time, but creativity requires acting in the moment. The result of this intersecting paradox create the melody that I am most in love with. Welcome to my portfolio. 
             </p>
+            <div class="project-carousel">
+                <div>
+                    <img src="images/p1-demo1.jpg" alt="project 1 first showcase image">
+                    <aside>this is an image description</aside>
+                </div>
+                <div><img src="images/p1-demo2.jpg" alt="project 1 second showcase image"></div>
+                <div><img src="images/p1-demo3.jpg" alt="project 1 third showcase image"></div>
+                <div><img src="images/p1-demo4.jpg" alt="project 1 third showcase image"></div>
+                <div><img src="images/p1-demo5.jpg" alt="project 1 third showcase image"></div>
+            </div>
+            <div class="project-carousel-nav">
+                <div><img src="images/p1-demo1.jpg" alt="project 1 first showcase image"></div>
+                <div><img src="images/p1-demo2.jpg" alt="project 1 second showcase image"></div>
+                <div><img src="images/p1-demo3.jpg" alt="project 1 third showcase image"></div>
+                <div><img src="images/p1-demo4.jpg" alt="project 1 third showcase image"></div>
+                <div><img src="images/p1-demo5.jpg" alt="project 1 third showcase image"></div>
+            </div>
+            <h2 id="sec-4">
+                Read More
+            </h2>
+                <div class="read-more-container">
+                <p>
+                    Having strong background and work experience in human center design, I believe the core of design, whether for a digital app or physical product, lies in determining the best sets of tools needed to accomplish a business goal.
+                    My best asset is my attention to details. Quality work requires time craftmanship and time, but creativity requires acting in the moment. The result of this intersecting paradox create the melody that I am most in love with. Welcome to my portfolio. 
+                </p>
+                <div class="project-4"></div>
+            </div>
         </section>
     </div>
     <!-- related projects -->
@@ -166,7 +196,11 @@
         </li>
       </ul>
     </footer>
+    <!-- scripts -->
     <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="scripts/project.js"></script>
   </body>
 </html>

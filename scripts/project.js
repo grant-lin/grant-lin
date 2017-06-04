@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
   /*==========================================================================
        Individual Project Navigation
-    ==========================================================================*/
+  ==========================================================================*/
   $(window).scroll(function(e) {
     var _scrolled = $(window).scrollTop();
     console.log('_scrolled is ' + _scrolled);
@@ -84,6 +84,27 @@ $(document).ready(function(){
        //filter the current li and add the is-active class
        .end().filter("[href='#"+currId+"']").parent().addClass('is-active');
      } 
+  });
+
+  /*==========================================================================
+       Project Carousel
+  ==========================================================================*/
+  $('.project-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.project-carousel-nav'
+  });
+  $('.project-carousel-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.project-carousel',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: true,
+    variableWidth: true
   });
 
 });

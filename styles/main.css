@@ -613,6 +613,68 @@ aside.project-nav li.is-active {
   width: 33.33%;
 }
 
+/*project carousel*/
+.project-carousel {
+  height: 40em;
+}
+
+.project-carousel div {
+  height: 100%;
+  background-color: black;
+}
+
+.project-carousel div img{
+  height: 95%;
+  margin: 0 auto;
+}
+
+.project-carousel .slick-slide {
+  color: #fff;
+  text-align: center;
+}
+
+.project-carousel-nav {
+  height: 5em;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.project-carousel-nav .slick-slide {
+  width: 5em;
+  margin: 0 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-carousel-nav .slick-slide:focus {
+  outline:0;
+}
+
+.project-carousel-nav div img {
+  margin: 0 auto;
+  height: 5em;
+}
+
+.project-carousel-nav .slick-prev:before,
+.project-carousel-nav .slick-next:before {
+    color: rgba(33, 168, 165, 1);
+}
+
+/*read more*/
+.read-more-container p {
+  float: left;
+  width: 48%;
+  margin: 0 0;
+}
+
+.read-more-container div {
+  float: right;
+  display: inline-block;
+  width: 48%;
+  height: 16em;
+  background-size: cover;
+}
+
 /*related projects*/
 aside.related-projects {
   overflow: auto;
@@ -820,6 +882,17 @@ footer ul {
 
   div.related-projects-parent {
     width: 50%;
+  }
+
+  /*read more*/
+  .read-more-container p {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .read-more-container div {
+    width: 100%;
+    margin-top: 2em;
   }
 
   /* footer style */
