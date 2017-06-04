@@ -25,10 +25,10 @@ $(document).ready(function(){
     if(!isMobile) {
       var _cursorParentOffset = $('#hero-img-container').offset(); 
       $('#handCursor').css(
-        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
+        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 20] + 'px)'
       );
       $('#handCursorHold').css(
-        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 25] + 'px)'
+        'transform', 'translate(' + [e.clientX - _cursorParentOffset.left] +'px,' + [e.clientY - _cursorParentOffset.top - 20] + 'px)'
       );
     }
 
