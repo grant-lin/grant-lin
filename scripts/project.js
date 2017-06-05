@@ -47,7 +47,7 @@ $(document).ready(function(){
     event.preventDefault();
     var _id = $(this).attr('href');
     console.log(_id);
-    $('body, html').animate({scrollTop: $(_id).offset().top + 1}, 900, 'swing');
+    $('body, html').animate({scrollTop: $(_id).offset().top + 2}, 900, 'swing');
   });
 
   //adding is-active to active nav link
