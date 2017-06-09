@@ -143,6 +143,24 @@ h2 {
   font-weight: 700;
 }
 
+/*about*/
+section.about {
+  position: relative;
+}
+
+.about h2 {
+  font-size: 0;
+}
+
+ul#about-skills {
+  /* Art Direction! {Prod: */
+  font-weight: 800;
+  font-size: 3em;
+  color: #21A8A5;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+}
+
 /*footer*/
 
 footer ul {
@@ -729,6 +747,38 @@ div.related-projects-parent:before{
 .related-projects-parent:hover a {
   opacity: 1;
 }
+
+/*==========================================================================
+   About Page Styles
+==========================================================================*/
+
+ul#about-skills {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about ul, .about p {
+  position: relative;
+  z-index: 2;
+}
+
+.about p {
+  width: 30%;
+}
+
+.profile-pic {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  height: 50em;
+  height: 100vh;
+  width: 60%;
+  background-image: url('../images/profile-pic.jpg');
+  background-size: cover;
+  background-color: #aeaeae;
+  z-index: 1;
+}
+
 
 /*==========================================================================
    Footer Section Styles
