@@ -130,13 +130,13 @@ h2 {
   line-height: 40px;
 }
 
-.related-projects h3 {
+.grid-projects h3 {
   font-size: 3em;
   line-height: 1.4em;
 }
 
-/*font style for anchor inside related projects div*/
-.related-projects-parent a {
+/*font style for anchor inside grid projects div*/
+.grid-projects-parent a {
   color: #fff;
   font-size: 1.5em;
   text-align: center;
@@ -574,13 +574,13 @@ header nav ul {
 }
 
 /*project nav*/
-aside.project-nav {
+nav.project-nav {
   float: left;
   margin-top: 38px;
   width: 20%;
 }
 
-aside.project-nav.is-fixed {
+nav.project-nav.is-fixed {
   position: fixed;
   top: 0;
   margin-top: 2.5em;
@@ -588,7 +588,7 @@ aside.project-nav.is-fixed {
   z-index: 3;
 }
 
-aside.project-nav.is-fixed-end {
+nav.project-nav.is-fixed-end {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -596,19 +596,19 @@ aside.project-nav.is-fixed-end {
   z-index: 3;
 }
 
-aside.project-nav li {
+nav.project-nav li {
   display: block;
   opacity: 0.5;
   transition: transform 0.2s;
   transform-origin: 0 50%;
 }
 
-aside.project-nav li:hover {
+nav.project-nav li:hover {
   transform: scale(1.1);
   transform-origin: 0 50%;
 }
 
-aside.project-nav li.is-active {
+nav.project-nav li.is-active {
   opacity: 1;
 }
 
@@ -693,12 +693,12 @@ aside.project-nav li.is-active {
   background-size: cover;
 }
 
-/*related projects*/
-aside.related-projects {
+/*grid projects*/
+nav.grid-projects {
   overflow: auto;
 }
 
-div.related-projects-parent {
+div.grid-projects-parent {
   position: relative;
   display: inline-block;
   float: left;
@@ -707,13 +707,13 @@ div.related-projects-parent {
   background-color: #000000;
 }
 
-div.related-projects-parent:before{
+div.grid-projects-parent:before{
   content: "";
   display: block;
   padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
-.related-projects-parent div {
+.grid-projects-parent div {
   position: absolute;
   top: 0;
   left: 0;
@@ -727,12 +727,12 @@ div.related-projects-parent:before{
   z-index: 0;
 }
 
-.related-projects-parent:hover div{
+.grid-projects-parent:hover div{
   transform: scale(1.2);
   opacity: 0.5;
 }
 
-.related-projects-parent a {
+.grid-projects-parent a {
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -744,7 +744,7 @@ div.related-projects-parent:before{
   z-index: 1;
 }
 
-.related-projects-parent:hover a {
+.grid-projects-parent:hover a {
   opacity: 1;
 }
 
@@ -755,6 +755,10 @@ div.related-projects-parent:before{
 ul#about-skills {
   list-style-type: none;
   padding: 0;
+}
+
+.about {
+  height: 65em;
 }
 
 .about ul, .about p {
@@ -770,8 +774,8 @@ ul#about-skills {
   position: absolute;
   top: 0;
   right: 2em;
-  height: 50em;
-  height: 100vh;
+  height: 60em;
+  /*height: 100vh;*/
   width: 60%;
   background-image: url('../images/profile-pic.jpg');
   background-size: cover;
@@ -779,6 +783,26 @@ ul#about-skills {
   z-index: 1;
 }
 
+div#about-external-links {
+  position: absolute;
+  bottom: -4em;
+  left: 2em;
+  display: inline-block;
+  padding: 1em 2em;
+  background: rgba(255,255,255,0.90);
+  box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
+  z-index: 2;
+}
+
+div#about-external-links ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+div#about-external-links ol li {
+  display: inline-block;
+  margin: 0 2em;
+}
 
 /*==========================================================================
    Footer Section Styles
@@ -930,7 +954,7 @@ footer ul {
   }
 
 
-  div.related-projects-parent {
+  div.grid-projects-parent {
     width: 50%;
   }
 
@@ -945,6 +969,37 @@ footer ul {
     margin-top: 2em;
   }
 
+  /*about*/
+  .about {
+    overflow: auto;
+    height: inherit;
+  }
+
+  .about p {
+    width: 100%;
+  }
+
+  .profile-pic {
+    position: relative;
+    left: 0;
+    float: left;
+    height: 60em;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+  }
+
+  div#about-external-links {
+    display: none;
+    /*position: relative;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    padding: 1em 2em;
+    background: rgba(255,255,255,0.90);
+    box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
+    z-index: 2;*/
+  }
   /* footer style */
   footer ul {
     line-height: 80px;
