@@ -55,22 +55,24 @@
         <h1 class="g-container">Contact</h1>
     </div>
     <form action="https://formspree.io/grant.haowei.lin@gmail.com"
-      method="POST">
-        <input type="text" name="name">
-        <input type="email" name="_replyto">
+      method="POST" class="g-container">
+      <div class="name-field">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Full Name">
+      </div>
+      <div class="email-field">
+        <label for="name">Your Email</label>
+        <input id="email" type="email" name="_replyto" placeholder="Your Email">
+      </div>
+      <div class="message-field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" cols="50" name="message" placeholder="Send me a message for inquiries, grabbing a coffee, or just saying hi :)!"></textarea>
+      </div>
         <input type="submit" value="Send">
     </form>
 
     <!-- footer -->
     <footer class="g-container" class="g-container">
-      <!-- footer cta -->
-      <div id="footer-cta">
-        Thank you for visiting!
-        <br>
-        <span ><a href="">Contact me</a></span> for inquiries
-        <br>View my 
-        <span><a href="">Resume</a></span>.
-      </div>
       <!-- footer nav -->
       <ul>
         <li><a href="index.html">Work</a></li>

@@ -805,6 +805,28 @@ div#about-external-links ol li {
 }
 
 /*==========================================================================
+   Contact Page Styles
+==========================================================================*/
+.name-field, .email-field {
+  display: inline-block;
+  width: 48%;
+}
+
+.message-field {
+  width: 96.25%;
+}
+label {
+  display: block;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+}
+
+input#message {
+  height: 20em;
+}
+/*==========================================================================
    Footer Section Styles
 ==========================================================================*/
 footer {
