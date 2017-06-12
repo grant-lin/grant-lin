@@ -823,8 +823,9 @@ input[type=text], input[type=email] {
   width: 100%;
 }
 
-input#message {
+textarea#message {
   height: 20em;
+  width: 100%;
 }
 /*==========================================================================
    Footer Section Styles
