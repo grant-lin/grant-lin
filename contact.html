@@ -51,11 +51,12 @@
     </header>
 
     <!-- work section -->
-    <div class="title-h1-container">
-        <h1 class="g-container">Contact</h1>
+    <div class="title-h1-container g-container">
+        <h1>Contact</h1>
+        <p id="contact-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <form action="https://formspree.io/grant.haowei.lin@gmail.com"
-      method="POST" class="g-container">
+      method="POST" class="contact-form g-container">
       <div class="name-field">
         <label for="name">Your Name</label>
         <input id="name" type="text" name="name" placeholder="Your Full Name">
@@ -66,9 +67,10 @@
       </div>
       <div class="message-field">
         <label for="message">Message</label>
-        <textarea id="message" rows="4" cols="50" name="message" placeholder="Send me a message for inquiries, grabbing a coffee, or just saying hi :)!"></textarea>
+        <textarea id="message" rows="4" cols="50" name="message" placeholder="Send me a message for inquiries, grabbing a coffee, or just saying hi :)!"></textarea><input type="submit" value="Send">
       </div>
-        <input type="submit" value="Send">
+      <input type="hidden" name="_next" value="contact.html" />
+        
     </form>
 
     <!-- footer -->
