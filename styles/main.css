@@ -109,6 +109,21 @@ h2 {
   font-weight: 400;
   text-align: center;
 }
+
+a.see-more-cta {
+  font-size: 2.1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+a.see-more-cta:hover {
+  background-color: #3ED5D4;
+  color: #fff;
+}
 /*individual project section*/
 .project-nav a {
   font-size: 1.5em;
@@ -572,6 +587,14 @@ header nav ul {
 
 .project-4 {
   background-image: url("../images/project-4-splash.jpg");
+}
+
+a.see-more-cta {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(33, 168, 165, 1);
+  padding: 1em 0;
+  vertical-align: center;
 }
 
 /*==========================================================================
