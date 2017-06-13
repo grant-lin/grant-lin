@@ -879,6 +879,7 @@ div#about-external-links ol li {
 
 .message-field {
   width: 100%;
+  overflow: auto;
 }
 
 label {
@@ -888,7 +889,6 @@ label {
 input:focus, textarea:focus {
   outline: 0;
 }
-
 
 input[type=text],
 input[type=email],
