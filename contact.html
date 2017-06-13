@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- carousel default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- apply customized stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- favicon -->
@@ -55,15 +59,15 @@
       method="POST" class="contact-form g-container">
       <div class="name-field">
         <label for="name">Your Name</label>
-        <input id="name" type="text" name="name" placeholder="Your Full Name" required>
+        <input id="name" type="text" name="name" placeholder="Your Full Name">
       </div>
       <div class="email-field">
         <label for="name">Your Email</label>
-        <input id="email" type="email" name="_replyto" placeholder="Your Email" required>
+        <input id="email" type="email" name="_replyto" placeholder="Your Email">
       </div>
       <div class="message-field">
         <label for="message">Message</label>
-        <textarea id="message" rows="4" cols="50" name="message" placeholder="Send me a message for inquiries, grabbing a coffee, or just saying hi :)!" required></textarea><input type="submit" value="Send">
+        <textarea id="message" rows="4" cols="50" name="message" placeholder="Send me a message for inquiries, grabbing a coffee, or just saying hi :)!"></textarea><input type="submit" value="Send">
       </div>
       <input type="hidden" name="_next" value="//grant-lin.github.io/grant-lin-art-direction/contact" />
         
@@ -102,7 +106,9 @@
     </footer>
     <!-- scripts -->
     <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="scripts/project.js"></script>
-    <script src="scripts/contact.js"></script>
   </body>
 </html>

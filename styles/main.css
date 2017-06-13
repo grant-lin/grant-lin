@@ -865,21 +865,15 @@ div#about-external-links ol li {
 
 .contact-form {
   margin-top: 3em;
-  overflow: auto;
-  clear: both;
-}
-
-.name-field, .email-field, .message-field {
-  display: inline-block;
 }
 
 .name-field, .email-field {
+  display: inline-block;
   width: 49%;
 }
 
 .message-field {
   width: 100%;
-  overflow: auto;
 }
 
 label {
@@ -1136,17 +1130,6 @@ footer ul {
     box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
     z-index: 2;*/
   }
-
-  /* contact style */
-  .name-field, .email-field, .message-field {
-    width: 100%;
-    margin-top: 2em;
-  }
-
-  #contact-blurb {
-    width: 100%;
-  }
-
   /* footer style */
   footer ul {
     line-height: 80px;
