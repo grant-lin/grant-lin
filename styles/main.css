@@ -1130,6 +1130,20 @@ footer ul {
     box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
     z-index: 2;*/
   }
+  /*contact style*/
+  #contact-blurb {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-top: 3em;
+  }
+
+  .name-field, .email-field, .message-field {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2em;
+  }
   /* footer style */
   footer ul {
     line-height: 80px;
