@@ -527,7 +527,9 @@ header nav ul {
   background-attachment: fixed;
   background-position: right center;
   background-size: cover;
-}
+  /*transition smoothly on certain browsers*/
+  transition: background 1s linear;
+} 
 
 .project-blurb {
   position: absolute;
