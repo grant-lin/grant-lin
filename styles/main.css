@@ -34,7 +34,7 @@ body {
 }
 
 .g-container {
-  padding: 0 2rem;
+  padding: 0 13rem;
 }
 
 header {
@@ -78,6 +78,10 @@ h1, label {
   letter-spacing: 0.05em;
   line-height: 1.4em;
   z-index: 2;
+}
+
+h1 {
+  font-size: 3.1em;
 }
 
 h2 {
@@ -125,6 +129,10 @@ a.see-more-cta:hover {
   color: #fff;
 }
 /*individual project section*/
+.scroll-down-cta {
+  text-align: center;
+  color: #fff;
+}
 .project-nav a {
   font-size: 1.5em;
   font-weight: 700;
@@ -240,7 +248,7 @@ header nav ul {
   display: none;
   background-color: #fff;
   width: 100%;
-  padding: 20px;
+  padding: 20px 2.4em;
   margin: 0 auto;
   border-bottom: 1px solid #e7e7e7;
   list-style-type: none;
@@ -258,7 +266,7 @@ header nav ul {
 .hamburger-menu {
   position: absolute;
   top: 3.5em;
-  right: 2em;
+  right: 13em;
   /* the following expression doesn't work*/
   width: var(--bar-width);
   height: calc( var(--bar-height) + var(--bar-spacing)*2 );
@@ -325,6 +333,7 @@ header nav ul {
 ==========================================================================*/
 #hero-section {
   position: relative;
+  padding-top: 8em;
 }
 
 #hero-img-container {
@@ -579,6 +588,11 @@ header nav ul {
   background-image: url("../images/project-1-splash.jpg");
 }
 
+.project-1-header {
+  background-image: url("../images/project1/p1-miguel.jpg");
+}
+
+
 .project-2 {
   background-image: url("../images/project-2-splash.jpg");
 }
@@ -590,6 +604,23 @@ header nav ul {
 .project-4 {
   background-image: url("../images/project-4-splash.jpg");
 }
+
+.project-5 {
+  background-image: url("../images/project5/p5-soylent.jpg");
+}
+
+.project-6 {
+  background-image: url("../images/project6/p6-embermug.jpg");
+}
+
+.project-7 {
+  background-image: url("../images/project7/p7-green-mask.jpg");
+}
+
+.project-8 {
+  background-image: url("../images/project8/p8-pot.jpg");
+}
+
 
 a.see-more-cta {
   display: inline-block;
@@ -608,7 +639,7 @@ a.see-more-cta {
 .project-hero-section {
   position: relative;
   height: 550px;
-  height: 77vh;
+  height: 90vh;
   background-color: #aeaeae;
   background-position: center;
   background-size: cover;
@@ -624,6 +655,74 @@ a.see-more-cta {
   position: absolute;
   bottom: 0.5em;
   width: 50%;
+}
+
+/*scroll down*/
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down-cta {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down {
+  position: absolute;
+  top: 3.8em;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
 
 /*project nav*/
@@ -673,7 +772,13 @@ nav.project-nav li.is-active {
 
 .project-body section {
   float: right;
-  width: 80%;
+  width: 65%;
+  margin-right: 15%;
+}
+
+.project-body img {
+  width: 100%;
+  margin: 1em 0;
 }
 
 .image-grid {
@@ -697,6 +802,7 @@ nav.project-nav li.is-active {
 .project-carousel div img{
   height: 95%;
   margin: 0 auto;
+  width: initial;
 }
 
 .project-carousel .slick-slide {
@@ -724,6 +830,7 @@ nav.project-nav li.is-active {
 .project-carousel-nav div img {
   margin: 0 auto;
   height: 5em;
+  width: initial;
 }
 
 .project-carousel-nav .slick-prev:before,
@@ -810,6 +917,10 @@ ul#about-skills {
   padding: 0;
 }
 
+#about-hero-container {
+  margin-top: 8.5em;
+}
+
 .about {
   height: 65em;
 }
@@ -820,16 +931,16 @@ ul#about-skills {
 }
 
 .about p {
-  width: 30%;
+  width: 40%;
 }
 
 .profile-pic {
   position: absolute;
   top: 0;
-  right: 2em;
-  height: 60em;
+  right: 13em;
+  height: 50em;
   /*height: 100vh;*/
-  width: 60%;
+  width: 40%;
   background-image: url('../images/profile-pic.jpg');
   background-size: cover;
   background-color: #aeaeae;
@@ -838,7 +949,7 @@ ul#about-skills {
 
 div#about-external-links {
   position: absolute;
-  bottom: -4em;
+  bottom: -8em;
   left: 2em;
   display: inline-block;
   padding: 1em 2em;
@@ -955,7 +1066,7 @@ footer ul {
 #footer-cta {
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 2.7em;
   z-index: 1;
 }
 
@@ -975,9 +1086,12 @@ footer ul {
 ==========================================================================*/
 
 @media screen and (max-width: 960px) {
-
+  /*global style*/
   html {
     font-size: 0.7em;
+  }
+  .g-container {
+    padding: 0 6rem;
   }
   /*hamburger menu style*/
   :root {
@@ -985,9 +1099,21 @@ footer ul {
     --bar-height: 12px;
     --bar-spacing: 24px;
   }
+  .hamburger-menu {
+    right: 6em;
+  }
+  header nav ul {
+    padding: 20px 1em;
+  }
+
   /*projects section style*/
   #projects-container section {
     background-position: center;
+  }
+  /*individual project section style*/
+  .project-body section {
+    width: 80%;
+    margin-right: 0;
   }
   /*footer style*/
   #footer-cta {
@@ -1002,12 +1128,17 @@ footer ul {
   html {
     font-size: 0.8em;
   }
-
+  .g-container {
+    padding: 0 2rem;
+  }
   /* hamburger menu style */
   :root {
     --bar-width: 50px;
     --bar-height: 8px;
     --bar-spacing: 16px;
+  }
+  header nav ul {
+    padding: 20px 0.5em;
   }
 
   /* set hamburger menu container */
