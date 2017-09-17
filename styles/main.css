@@ -781,6 +781,10 @@ nav.project-nav li.is-active {
   margin: 1em 0;
 }
 
+.project-body section {
+  padding: 0 2em;
+}
+
 .image-grid {
   margin: 4em 0;
 }
@@ -856,6 +860,7 @@ nav.project-nav li.is-active {
 /*grid projects*/
 nav.grid-projects {
   overflow: auto;
+  margin-top: 3em;
 }
 
 div.grid-projects-parent {
@@ -1060,7 +1065,7 @@ footer ul {
   list-style-type: none;
   padding: 0px;
   margin: 25px auto;
-  margin-top: 150px; 
+  margin-top: 3.3em; 
 }
 
 #footer-cta {
@@ -1071,9 +1076,9 @@ footer ul {
 }
 
 .social-links {
-  position: absolute;
-  right: 30px;
-  bottom: 0px;
+  position: relative;
+  top: 4.8em;
+  float: right;
   padding: 0;
 }
 
@@ -1282,6 +1287,8 @@ footer ul {
     line-height: 80px;
     margin-bottom: 0px;
     margin-top: 60px;
+    clear: both;
+    float: left;
   }
 
   #footer-cta {
@@ -1293,9 +1300,7 @@ footer ul {
   .social-links {
     display: block;
     position: relative;
-    margin: 25px 0;
-    padding-top: 0;
-    right: initial;
-    bottom: 0;
+    float: left;
+    top: 0.3em;
   }
 }
