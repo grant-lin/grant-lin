@@ -106,6 +106,7 @@ h2 {
 
 #profession, .contact-span, .resume-span {
   color: rgba(33, 168, 165, 1);
+  cursor: pointer;
 }
 
 .project-blurb a { 
@@ -606,11 +607,11 @@ header nav ul {
 }
 
 .project-5 {
-  background-image: url("../images/project5/p5-soylent.jpg");
+  background-image: url("../images/project-5-splash.jpg");
 }
 
 .project-6 {
-  background-image: url("../images/project6/p6-embermug.jpg");
+  background-image: url("../images/project-6-splash.jpg");
 }
 
 .project-7 {
@@ -1175,9 +1176,11 @@ footer ul {
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    height: 560px;
+    height: 80vh;
     margin-top: 12.5em;
   }
-
+  
   .project-blurb {
     position: relative;
     opacity: 1;

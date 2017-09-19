@@ -7,6 +7,7 @@ $(document).ready(function(){
   ==========================================================================*/
 
   //why does this decrease the clickable area of hamburger-menu?
+  //this is fixed
   $('.hamburger-menu').click( function() {
       event.preventDefault();
       $('.bar').toggleClass('animate');
@@ -14,7 +15,31 @@ $(document).ready(function(){
       //need to add a line to auto scroll browser to the top
       window.scrollTo(0, 0);
     });
+  /*==========================================================================
+     Clickable Profession
+  ==========================================================================*/
 
+  $('#profession').click( function() {
+    var currProfessionName = $(this).text().toLowerCase();
+    console.log(currProfessionName);
+    switch (currProfessionName) {
+      case 'art photography':
+        $(this).fadeOut( function() {
+          $(this).text('Floating Donuts').fadeIn();
+        });
+        break;
+      case 'floating donuts':
+        $(this).fadeOut( function() {
+          $(this).text('Visual Design').fadeIn();
+        });
+        break;
+      case 'visual design':
+        $(this).fadeOut( function() {
+          $(this).text('Art Photography').fadeIn();
+        });
+        break;
+    }
+  });
   /*==========================================================================
      Heart Drop Interaction
   ==========================================================================*/
