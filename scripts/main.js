@@ -23,6 +23,7 @@ $(document).ready(function(){
     var currProfessionName = $(this).text().toLowerCase();
     console.log(currProfessionName);
     switch (currProfessionName) {
+      //if the curr text is art photography, change text to repurposed floating donuts
       case 'art photography':
         $(this).fadeOut( function() {
           $(this).text('Floating Donuts').fadeIn();
@@ -30,10 +31,10 @@ $(document).ready(function(){
         break;
       case 'floating donuts':
         $(this).fadeOut( function() {
-          $(this).text('Visual Design').fadeIn();
+          $(this).text('Repurposed Trash').fadeIn();
         });
         break;
-      case 'visual design':
+      case 'repurposed trash':
         $(this).fadeOut( function() {
           $(this).text('Art Photography').fadeIn();
         });
