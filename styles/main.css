@@ -501,16 +501,19 @@ header nav ul {
 .section-nav li a {
   position: absolute;
   top: 50%;
+  left: 50%;
   visibility: hidden;
   transform: translate(10%, -50%);
-  width: 200px;
+  width: 150px;
   padding: 5px 10px; 
   opacity: 0;
   color: #111; background-color: #fff;
   transition: all .3s;
   border-radius: 25px;
+  text-align: center;
 }
 
+/*triangle pointer*/
 .section-nav li a:before {
   content: "";
   position: absolute;
