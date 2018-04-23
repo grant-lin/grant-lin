@@ -45,6 +45,7 @@ a {
   color: #21A8A5;
   text-decoration: none;
   transition: all 300ms;
+  cursor: pointer;
 }
 
 a.anchor-disabled {
@@ -591,11 +592,9 @@ header nav ul {
 .project-1 {
   background-image: url("../images/project-1-splash.jpg");
 }
-
 .project-1-header {
-  background-image: url("../images/project1/p1-miguel.jpg");
+  background-image: url("../images/project-1-splash.jpg");
 }
-
 
 .project-2 {
   background-image: url("../images/project-2-splash.jpg");
@@ -603,6 +602,9 @@ header nav ul {
 
 .project-3 {
   background-image: url("../images/project-3-splash.jpg");
+}
+.project-3-header {
+  background-image: url("../images/project3/p3-miguel.jpg");
 }
 
 .project-4 {
@@ -783,6 +785,33 @@ nav.project-nav li.is-active {
 .project-body img {
   width: 100%;
   margin: 1em 0;
+}
+/*fill the video embed the whole width of the parent*/
+.project-body .video-container {
+  position: relative;
+  padding-bottom: 52%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+.project-body .black-frame {
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 0;
+}
+.project-body .video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.project-body .video-container .crushing-ice-cream {
+  width: 150%;
+  height: 150%;
+  transform: translate(-20%, -30%);
 }
 
 .project-body section {

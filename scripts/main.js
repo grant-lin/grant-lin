@@ -24,7 +24,7 @@ $(document).ready(function(){
     console.log(currProfessionName);
     switch (currProfessionName) {
       //if the curr text is art photography, change text to repurposed floating donuts
-      case 'art photography':
+      case 'art direction':
         $(this).fadeOut( function() {
           $(this).text('Floating Donuts').fadeIn();
         });
@@ -36,7 +36,7 @@ $(document).ready(function(){
         break;
       case 'repurposed trash':
         $(this).fadeOut( function() {
-          $(this).text('Art Photography').fadeIn();
+          $(this).text('Art Direction').fadeIn();
         });
         break;
     }
