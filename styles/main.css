@@ -786,6 +786,29 @@ nav.project-nav li.is-active {
   width: 100%;
   margin: 1em 0;
 }
+
+.project-body p a {
+  color: #000;
+  word-break: keep-all;
+  background-color: rgba(254, 253, 56, 1);
+  padding: 0.15em;
+}
+.project-body p a:hover {
+  color: #000;
+  background-color: rgba(250, 217, 45, 1);
+  border-radius: 1em;
+  transition: all 0.4s;
+}
+
+/*image descriptions*/ 
+.video-container + span, img + span { 
+  display: inherit;
+  opacity: 0.6;
+  margin-top: -1.5em;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  font-style: italic;
+}
 /*fill the video embed the whole width of the parent*/
 .project-body .video-container {
   position: relative;
