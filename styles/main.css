@@ -21,7 +21,7 @@ html {
 ========================================================================== */
 
 html {
-  font-size: 0.9em;
+  font-size: 0.9em; 
 }
 
 body {
@@ -599,12 +599,15 @@ header nav ul {
 .project-2 {
   background-image: url("../images/project-2-splash.jpg");
 }
+.project-2-header {
+  background-image: url("../images/project-2-splash3.jpg");
+}
 
 .project-3 {
   background-image: url("../images/project-3-splash.jpg");
 }
 .project-3-header {
-  background-image: url("../images/project3/p3-miguel.jpg");
+  background-image: url("../images/project-3-splash3.jpg");
 }
 
 .project-4 {
@@ -627,7 +630,114 @@ header nav ul {
   background-image: url("../images/project8/p8-pot.jpg");
 }
 
-
+.work-1 {
+  background-image: url("../images/work/w1.jpg");
+}
+.work-2 {
+  background-image: url("../images/work/w2.jpg");
+}
+.work-3 {
+  background-image: url("../images/work/w3.jpg");
+}
+.work-4 {
+  background-image: url("../images/work/w4.jpg");
+}
+.work-5 {
+  background-image: url("../images/work/w5.jpg");
+}
+.work-6 {
+  background-image: url("../images/work/w6.jpg");
+}
+.work-7 {
+  background-image: url("../images/work/w7.jpg");
+}
+.work-8 {
+  background-image: url("../images/work/w8.jpg");
+}
+.work-9 {
+  background-image: url("../images/work/w9.jpg");
+}
+.work-10 {
+  background-image: url("../images/work/w10.jpg");
+}
+.work-11 {
+  background-image: url("../images/work/w11.jpg");
+}
+.work-12 {
+  background-image: url("../images/work/w12.jpg");
+}
+.work-13 {
+  background-image: url("../images/work/w13.jpg");
+}
+.work-14 {
+  background-image: url("../images/work/w14.jpg");
+}
+.work-15 {
+  background-image: url("../images/work/w15.jpg");
+}
+.work-16 {
+  background-image: url("../images/work/w16.jpg");
+}
+.work-17 {
+  background-image: url("../images/work/w17.jpg");
+}
+.work-18 {
+  background-image: url("../images/work/w18.jpg");
+}
+.work-19 {
+  background-image: url("../images/work/w19.jpg");
+}
+.work-20 {
+  background-image: url("../images/work/w20.jpg");
+}
+.work-21 {
+  background-image: url("../images/work/w21.jpg");
+}
+.work-22 {
+  background-image: url("../images/work/w22.jpg");
+}
+.work-23 {
+  background-image: url("../images/work/w23.jpg");
+}
+.work-24 {
+  background-image: url("../images/work/w24.jpg");
+}
+.work-25 {
+  background-image: url("../images/work/w25.jpg");
+}
+.work-26 {
+  background-image: url("../images/work/w26.jpg");
+}
+.work-27 {
+  background-image: url("../images/work/w27.jpg");
+}
+.work-28 {
+  background-image: url("../images/work/w28.jpg");
+}
+.work-29 {
+  background-image: url("../images/work/w29.jpg");
+}
+.work-30 {
+  background-image: url("../images/work/w30.jpg");
+}
+.work-31 {
+  background-image: url("../images/work/w31.jpg");
+}
+.work-32 {
+  background-image: url("../images/work/w32.jpg");
+}
+.work-33 {
+  background-image: url("../images/work/w33.jpg");
+}
+.work-34 {
+  background-image: url("../images/work/w34.jpg");
+}
+.work-35 {
+  background-image: url("../images/work/w35.jpg");
+}
+.work-36 {
+  background-image: url("../images/work/w36.jpg");
+}
 a.see-more-cta {
   display: inline-block;
   width: 100%;
