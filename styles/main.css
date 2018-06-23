@@ -61,6 +61,20 @@ a:active {
   color: #3FE9E8;
 }
 
+p a {
+  color: #000;
+  word-break: keep-all;
+  background-color: rgba(254, 253, 56, 1);
+  padding: 0.15em;
+}
+
+p a:hover {
+  color: #000;
+  background-color: rgba(250, 217, 45, 1);
+  border-radius: 1em;
+  transition: all 0.4s;
+}
+
 /*==========================================================================
    Text Styles
 ==========================================================================*/
@@ -166,9 +180,11 @@ a.see-more-cta:hover {
   font-size: 1.5em;
   text-align: center;
   font-weight: 700;
+}
+/*disable cursor:pointer only in Work screen*/
+.work-screen .grid-projects-parent a {
   cursor: default;
 }
-
 /*about*/
 section.about {
   position: relative;
@@ -1146,6 +1162,21 @@ div#about-external-links ol li {
   margin: 0 1em;
 }
 
+div#about-external-links ol li a {
+  color: #000;
+  word-break: keep-all;
+  background-color: rgba(254, 253, 56, 1);
+  padding: 0.15em;
+}
+
+div#about-external-links ol li a:hover {
+  color: #000;
+  background-color: rgba(250, 217, 45, 1);
+  border-radius: 1em;
+  transition: all 0.4s;
+}
+
+
 /*==========================================================================
    Contact Page Styles
 ==========================================================================*/
@@ -1348,9 +1379,9 @@ footer ul {
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    height: 560px;
-    height: 80vh;
-    margin-top: 12.5em;
+    height: 340px;
+    height: 50vh;
+    margin-top: 17.5em;
   }
   
   .project-blurb {
@@ -1360,7 +1391,7 @@ footer ul {
     width: 100%;
     padding: 1.5em 2.5em;
     margin: 0 auto;
-    top: -9em;
+    top: -16em;
     bottom: initial;
     right: initial;
     background-color: rgba(255, 255, 255, 1);
