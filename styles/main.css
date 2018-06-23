@@ -1506,6 +1506,16 @@ footer ul {
     width: 100%;
   }
 
+  ul#about-skills {
+    /* Art Direction! {Prod: */
+    font-weight: 800;
+    font-size: 3em;
+    color: rgba(62, 187, 205, 1);
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    background-image: none;
+  }
+
   .profile-pic {
     position: relative;
     left: 0;
