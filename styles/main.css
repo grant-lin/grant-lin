@@ -1476,6 +1476,10 @@ footer ul {
   }
 
   /*about*/
+  #about-hero-container {
+    margin-top: 0em;
+  }
+
   .about {
     overflow: auto;
     height: inherit;
@@ -1489,8 +1493,8 @@ footer ul {
     position: relative;
     left: 0;
     float: left;
-    height: 60em;
-    height: 100vh;
+    height: 30em;
+    height: 50vh;
     width: 100%;
     background-position: center;
   }
