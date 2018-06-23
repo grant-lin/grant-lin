@@ -1341,7 +1341,10 @@ footer ul {
   p {
     font-size: 1.2em;
     line-height: 2em;
+    font-weight: 500;
   }
+
+
   .g-container {
     padding: 0 2rem;
   }
@@ -1355,6 +1358,16 @@ footer ul {
     padding: 20px 0.5em;
   }
 
+  /* signature font style*/
+  .signature {
+    font-size: 1em;
+  }
+
+  /* signature breakline */
+  .break-line {
+    width: 10px;
+
+  }
   /* set hamburger menu container */
   .hamburger-menu {
     position: relative;
@@ -1371,6 +1384,14 @@ footer ul {
   }  
 
   /* project section style */
+  /* hide the scroll down tooltip */
+  .scroll-down-cta {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+
   /* hide opaque dot forever */
   .section-nav li {
     display: none;
@@ -1386,7 +1407,7 @@ footer ul {
     background-repeat: no-repeat;
     height: 340px;
     height: 50vh;
-    margin-top: 17.5em;
+    margin-top: 21.5em;
   }
   
   .project-blurb {
@@ -1396,7 +1417,7 @@ footer ul {
     width: 100%;
     padding: 1.5em 2.5em;
     margin: 0 auto;
-    top: -16em;
+    top: -18em;
     bottom: initial;
     right: initial;
     background-color: rgba(255, 255, 255, 1);
@@ -1434,7 +1455,11 @@ footer ul {
     margin: 1em 0;
   }
 
-
+  /* image description */
+  .video-container + span, img + span { 
+    font-size: 1.2em;
+    line-height: 2em;
+  }
   div.grid-projects-parent {
     width: 50%;
   }
