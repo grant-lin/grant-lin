@@ -1441,10 +1441,18 @@ footer ul {
     box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
   }
 
+  .project-blurb a {
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
   .project-blurb.is-active {
     transform: none;
   }
 
+  .project-blurb h3 {
+    font-size: 1.75em;
+  }
   /* individual project page style*/
   .project-nav ul {
     display: none;
