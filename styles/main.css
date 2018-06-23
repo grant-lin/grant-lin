@@ -1337,6 +1337,11 @@ footer ul {
   html {
     font-size: 0.8em;
   }
+
+  p {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
   .g-container {
     padding: 0 2rem;
   }
@@ -1409,6 +1414,8 @@ footer ul {
 
   .project-hero-section {
     background-position: bottom center;
+    height: 203px;
+    height: 38vh;
   }
 
   .project-hero-section h2 {
