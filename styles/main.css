@@ -1507,13 +1507,11 @@ footer ul {
   }
 
   ul#about-skills {
-    /* Art Direction! {Prod: */
-    font-weight: 800;
-    font-size: 3em;
-    color: rgba(62, 187, 205, 1);
-    letter-spacing: 0.02em;
-    line-height: 1.2em;
+    /* Remove animation in mobile */
+    color: rgba(0, 0, 0, 0.3);
     background-image: none;
+    -webkit-text-fill-color: inherit;
+    -webkit-animation: inherit;
   }
 
   .profile-pic {
