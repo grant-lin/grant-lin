@@ -198,9 +198,23 @@ ul#about-skills {
   /* Art Direction! {Prod: */
   font-weight: 800;
   font-size: 3em;
-  color: rgba(62, 187, 205, 1);
+  /*color: rgba(62, 187, 205, 1);*/
   letter-spacing: 0.02em;
   line-height: 1.2em;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 20s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 /*contact*/
