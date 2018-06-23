@@ -1360,12 +1360,12 @@ footer ul {
 
   /* signature font style*/
   .signature {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   /* signature breakline */
   .break-line {
-    width: 10px;
+    display: none;
 
   }
   /* set hamburger menu container */
@@ -1374,7 +1374,10 @@ footer ul {
     top: 9%;
     left: 80%;
   }
-
+  /* home hero padding */
+  #hero-section {
+    padding-top: 0em;
+  }
   /* 2 columns for hero bio */
   #hero-bio {
     width: 100%;
