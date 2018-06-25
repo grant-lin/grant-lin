@@ -1123,6 +1123,7 @@ div.grid-projects-parent:before{
 ul#about-skills {
   list-style-type: none;
   padding: 0;
+  pointer-events: none;
 }
 
 #about-hero-container {
@@ -1149,10 +1150,14 @@ ul#about-skills {
   height: 50em;
   /*height: 100vh;*/
   width: 40%;
-  background-image: url('../images/profile-pic.jpg');
+  background-image: url('../images/profile-pic-hover.jpg');
   background-size: cover;
   background-color: #aeaeae;
   z-index: 1;
+}
+
+.profile-pic:hover {
+  background-image: url('../images/profile-pic.jpg');
 }
 
 div#about-external-links {
