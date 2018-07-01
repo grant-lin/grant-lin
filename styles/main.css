@@ -42,7 +42,8 @@ header {
 }
 
 a {
-  color: rgba(62, 187, 205, 1);
+  /* brand color */
+  color: rgba(62, 187, 205, 1); 
   text-decoration: none;
   transition: all 300ms;
   cursor: pointer;
@@ -1275,6 +1276,46 @@ input[type=submit]:hover {
   background-color: #3ED5D4;
 }
 
+/* Thank you form response */
+
+.thank-you-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(62, 187, 205, 1); 
+  text-align: center;
+}
+
+.thank-you-bg h1 {
+  margin-top: 0;
+}
+
+.thank-you-msg {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  -webkit-transform: translate(-50%, -50%); 
+}
+
+.thank-you-msg p {
+  margin-bottom: 3em;
+}
+
+.thank-you-msg a {
+  color: #000;
+  word-break: keep-all;
+  background-color: rgba(254, 253, 56, 1);
+  padding: 0.8em;
+}
+.thank-you-msg a:hover {
+  color: #000;
+  background-color: rgba(250, 217, 45, 1);
+  border-radius: 2em;
+  transition: all 0.4s;
+}
+
 /*==========================================================================
    Footer Section Styles
 ==========================================================================*/
@@ -1548,7 +1589,7 @@ footer ul {
     box-shadow: 0 2px 100px 0 rgba(0,0,0,0.22);
     z-index: 2;*/
   }
-  /*contact style*/
+  /* contact style */
   #contact-blurb {
     width: 100%;
   }
@@ -1562,6 +1603,15 @@ footer ul {
     width: 100%;
     margin-top: 2em;
   }
+  /* thank you message style*/
+  .thank-you-msg {
+    width: 60%;
+  }
+
+  .thank-you-bg h1 {
+    font-size: 2em;
+  }
+
   /* footer style */
   footer ul {
     line-height: 80px;
