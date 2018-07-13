@@ -244,6 +244,7 @@ input[type=submit] {
   font-weight: 700;
   letter-spacing: 0.05em;
   z-index: 2;
+  cursor: pointer;
 }
 
 /*footer*/
@@ -948,8 +949,8 @@ nav.project-nav li.is-active {
   transition: all 0.4s;
 }
 
-/*image descriptions*/ 
-.video-container + span, img + span { 
+/*image descriptions or caption */ 
+.video-container + span, img + span, .black-frame + span { 
   display: inherit;
   opacity: 0.6;
   margin-top: -1.5em;
@@ -971,6 +972,7 @@ nav.project-nav li.is-active {
   text-align: center;
   background-color: #f4f4f4;
   padding: 0;
+  margin: 2em 0;
 }
 .project-body .video-container iframe {
   position: absolute;
