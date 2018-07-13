@@ -1529,7 +1529,7 @@ footer ul {
   }
 
   /* image description */
-  .video-container + span, img + span { 
+  .video-container + span, img + span, .black-frame + span { 
     font-size: 1.2em;
     line-height: 2em;
   }
