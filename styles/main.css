@@ -568,7 +568,7 @@ header nav ul {
 #projects-container section {
   position: relative;
   height: 700px;
-  height: 105vh;
+  height: 95vh;
   /*need to implement shorthand*/
   background-color: #aeaeae;
   background-attachment: fixed;
@@ -1331,7 +1331,6 @@ footer ul {
   list-style-type: none;
   padding: 0px;
   margin: 25px auto;
-  margin-top: 3.3em; 
 }
 
 #footer-cta {
@@ -1341,10 +1340,17 @@ footer ul {
   z-index: 1;
 }
 
+.footer-nav {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+
 .social-links {
   position: relative;
-  top: 4.8em;
-  float: right;
+  top: 0em;
+  float: left;
   padding: 0;
 }
 
