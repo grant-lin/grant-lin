@@ -923,6 +923,7 @@ nav.project-nav li.is-active {
 .project-body {
   position: relative;
   overflow: hidden;
+  padding-top: 6em;
 }
 
 .project-body section {
