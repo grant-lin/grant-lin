@@ -1526,6 +1526,9 @@ footer ul {
     width: 100%;
   }
 
+  .project-body {
+    padding-top: 0em;
+  }
   .project-body section {
     width: 100%;
   }
