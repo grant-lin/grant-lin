@@ -620,6 +620,13 @@ header nav ul {
   background-color: #3ED5D4;
 }
 
+/* make the background clickable */
+.project-bg-link {
+  height: 100%;
+  margin-left: -13em;
+  margin-right: -13em;
+}
+
 
 
 .project-1 {
