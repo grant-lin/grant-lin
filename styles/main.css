@@ -202,7 +202,8 @@ ul#about-skills {
   /*color: rgba(62, 187, 205, 1);*/
   letter-spacing: 0.02em;
   line-height: 1.2em;
-  color: #f35626;
+  /*default text color*/
+  color: rgba(0, 0, 0, 0.7); 
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1589,7 +1590,7 @@ footer ul {
 
   ul#about-skills {
     /* Remove animation in mobile */
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.7);
     background-image: none;
     -webkit-text-fill-color: inherit;
     -webkit-animation: inherit;
