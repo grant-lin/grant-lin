@@ -624,8 +624,9 @@ header nav ul {
 /* make the background clickable */
 .project-bg-link {
   height: 100%;
-  margin-left: -13em;
-  margin-right: -13em;
+  /*the following is to make sure that the background is clickable whole width*/
+  mzargin-left: -13em;
+  margin-right: -13em; 
 }
 
 
@@ -1528,7 +1529,11 @@ footer ul {
   .project-nav ul {
     display: none;
   }
-
+  /*get rid of the extra margin for mobile*/
+  .project-bg-link {
+    mzargin-left: 0em;
+    margin-right: 0em; 
+  }
   .project-hero-section {
     background-position: bottom center;
     height: 203px;
